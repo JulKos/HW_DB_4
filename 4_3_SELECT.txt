@@ -1,0 +1,23 @@
+SELECT title, release_date FROM Albums
+WHERE release_date = 2018;
+
+SELECT name, duration FROM Tracks
+WHERE duration >= (
+    SELECT MAX(duration) FROM Tracks);
+
+SELECT name FROM Tracks
+WHERE duration >= 3.30;
+
+SELECT name FROM Collection
+WHERE release_date BETWEEN 2018 AND 2020;
+
+SELECT * FROM Performers
+WHERE name LIKE '%%' and name NOT LIKE '%% %%';
+
+SELECT name FROM Tracks
+WHERE name LIKE '%%my%%';
+
+
+
+
+
